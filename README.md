@@ -1,92 +1,23 @@
 # Vue.js truffle box
 
-A [`truffle box`](http://truffleframework.com/boxes/) to serve as the foundation of any [`Truffle`](http://truffleframework.com) and [`Vue.js`](https://vuejs.org/) dApp. Comes with [`Vue.js`](https://vuejs.org/), [`vue-router`](https://router.vuejs.org/en/), [`Vuex`](https://vuex.vuejs.org/en/intro.html) and [`sass-loader`](https://github.com/webpack-contrib/sass-loader). A minimalist user authentication smart contract is also provided.
-
-## Directory structure
-
-This truffle box is crafted to enforce a clean directory structure.
-
-```
-/
-|
-+-- build/
-|   |
-|   +-- contracts/
-|   |   |
-|   |   + truffle compiled contracts
-|
-+-- config/
-|   |
-|   +-- babel/
-|   |   |
-|   |   + babel config files - to come (babel does not allow to specify a custom config file path - yet - so the babel configuration occurs in the package.json file for now)
-|   |
-|   +-- eslint/
-|   |   |
-|   |   + estlint config files
-|   |
-|   +-- postcss/
-|   |   |
-|   |   + postcss config files
-|   |
-|   +-- vue-loader
-|   |   |
-|   |   + vue-loader config files
-|   |   
-|   +-- webpack/
-|   |   |
-|   |   + webpack config files
-|   
-+-- contracts/
-|   | 
-|   + solidity contracts
-|
-+-- migrations/
-|   |
-|   + truffle migrations files
-|
-+-- scripts/
-|   |
-|   + webpack scripts
-|
-+-- src/
-|   |
-|   + vue.js dapp files
-|
-+-- static/
-|   |
-|   + vue.js dapp static files
-|
-+-- test/
-|   |
-|   +-- e2e/
-|   |   |
-|   |   + e2e test files
-|   |
-|   +-- truffle/
-|   |   |
-|   |   + truffle test files
-|   |
-|   +-- unit/
-|   |   |
-|   |   + unit test files
-```
+A [`truffle box`](http://truffleframework.com/boxes/) to serve as the foundation of any [`Truffle`](http://truffleframework.com) and [`Vue.js`](https://vuejs.org/) dApp. Comes with [`Vue.js`](https://vuejs.org/), [`vue-router`](https://router.vuejs.org/en/), [`Vuex`](https://vuex.vuejs.org/en/intro.html), [`sass-loader`](https://github.com/webpack-contrib/sass-loader) and [`Vuetify`](https://github.com/vuetifyjs/vuetify)
+. A minimalist user authentication smart contract is also provided.
 
 ## Installation
 
-1. Install [Truffle](http://truffleframework.com) and an Ethereum client - like [EthereumJS TestRPC](https://github.com/ethereumjs/testrpc).
+1. Install [Truffle](http://truffleframework.com) and an Ethereum client - like [Ganache CLI](https://github.com/trufflesuite/ganache-cli).
 	```
 	npm install -g truffle // Version 3.0.5+ required.
-	npm install -g ethereumjs-testrpc
+	npm install -g ganache-cli
 	```
 
 2. Download this box.
 	```
-	truffle unbox wespr/truffle-vue
+	truffle unbox filipesoccol/truffle-vuetify
 	```
-3. Launch [`testrpc`](https://github.com/ethereumjs/testrpc).
+3. Launch [`ganache-cli`](https://github.com/ethereumjs/testrpc).
 	```
-	testrpc <options>
+	ganache-cli <options>
 	```
 
 4. Compile and migrate the contracts.
@@ -126,4 +57,4 @@ npm run build
 
 ## Issues
 
-Please send any bug issues or proposal for improvement to [Issues](https://github.com/wespr/truffle-vue/issues).
+Please send any bug issues or proposal for improvement to [Issues](https://github.com/filipesoccol/truffle-vuetify/issues).
