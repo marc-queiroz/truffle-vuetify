@@ -1,9 +1,19 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import Vuetify from 'vuetify'
+import colors from 'vuetify/es5/util/colors'
 import App from './App'
 import Web3 from 'web3'
 import router from './router'
+
+Vue.use(Vuetify, {
+  theme: {
+    primary: colors.green.lighten2, // #E53935
+    secondary: colors.green.darken1, // #FFCDD2
+    accent: colors.indigo.base // #3F51B5
+  }
+})
 
 Vue.config.productionTip = false
 
